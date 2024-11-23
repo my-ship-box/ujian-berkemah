@@ -1,0 +1,350 @@
+
+.body {
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 25px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container {
+   display: flex;
+   background-color: white;
+   color: black;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1%;
+   box-sizing: border-box;
+   transition: color 0.3s ease, transform 0.3s ease;
+}
+.flex-container :hover {
+color: blue;
+cursor: pointer;
+}
+ 
+ .flex-container > div {
+   background-color: white;
+   color: black;
+   border: none;
+   border-radius: 5px;
+    margin-right: 35px;
+   padding: 4px;
+   font-size: 15px;
+   text-align: center;
+ }
+.kontak {
+   padding: 8px 16px;
+   background-color: black;
+   color: white;
+   border: none;
+   border-radius: 5px;
+    margin-right: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.kontak:hover {
+background-color:darkgreen;
+color: white;
+}
+ .gambar {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 1rem;
+   padding: 20px;
+   background-color: white;
+ }
+ 
+ .gallery-item {
+   position: relative;
+   border-radius: 8px;
+   overflow: hidden;
+   aspect-ratio: 1/1;
+ }
+ 
+ .gallery-item img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.3s ease;
+ }
+ .quote {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 60px;
+   font-size: 25px;
+ }
+ .myquote {
+   font-size: 50px;
+ }
+ .me {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 45px;
+  gap: 15px;
+  margin: 50px;
+}
+ .about {
+  display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+.about:hover {
+  background-color: #333;
+  color: white;
+ cursor: pointer;
+}
+.myself {
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
+    padding: 60px 0;
+}
+.mycontent {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 30px;
+}
+.siluet {
+flex: 1;
+}
+.siluet img {
+  width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+.see {
+  padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.5s ease, transform 0.5s ease;
+}
+.see:hover {
+background-color:darkgreen;
+color: white;
+}
+.future {
+  font-size: 40px;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #000;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  display: none;
+  align-items: center;
+position: absolute;
+width: 100%;
+opacity: 0;
+
+  background-color: black;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.myexp {
+  max-width: 1200px;
+   margin: 0 auto;
+  padding: 2rem;
+}
+.experience {
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 80px;
+  width: 80%;
+  margin-left: 7%;
+  margin-bottom: 50px;
+}
+.myskill {
+  flex: 1 1 calc(33.333% - 20px);
+    background: white;
+    border-radius: 7px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   margin: 15px;
+    animation: slide 10s ease infinite;
+    justify-content: space-between;
+ }
+ .myskill:hover {
+  transform: translateY(-5px);
+}
+.myskill img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.isi-skill {
+  padding: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  background-color: whitesmoke;
+  border-top: 1px solid #666;
+}
+footer h2 {
+  text-align: center;
+  margin-right: 80px;
+}
+footer p, footer a{
+color: #000;
+    font-size: 14px;
+ 
+}
+.judulpendapat h2 {
+  display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+.judulpendapat h2:hover {
+  background-color: #333;
+  color: white;
+ cursor: pointer;
+}
+.kata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+.katateman {
+background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+}
+.kerjasama {
+  text-align: center;
+  padding: 45px 0;
+  background-color: lightgrey;
+}
+.kerjasama h1 {
+  font-size: 60px;
+    color: #000;
+    margin-bottom: 20px;
+}
+.proses {
+  padding: 10px;
+  margin-top: 20px;
+}
+.proses-head {
+  margin-bottom: 30px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.proses-head h2 {display: inline-block;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #666;
+  background-color: #fff;
+  border: 1px solid #333;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+
+.proses-head h2:hover {
+background-color: #333;
+color: white;
+cursor: pointer;
+}
+.isi-proses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.cara {
+  position: relative;
+ overflow: hidden;
+border-radius: 8px;
+ height: 400px;
+}
+
+.cara img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.komunikasi {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  transition: all 0.5s ease, transform 0.5s ease;
+}
+.komunikasi:hover {
+background-color:darkgreen;
+color: white;
+}
+

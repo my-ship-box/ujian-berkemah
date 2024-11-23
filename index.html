@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="flex-container">
+ <h1>
+    Portofolio Saya
+ </h1>
+        <div>Identitas</div>
+        <div>Pendidikan</div>
+        <div>Pengalaman</div>  
+        <button class="kontak">Kontak saya</button>
+      </div>
+    </div>
+ </div>
+ <div class="gambar">
+<div class="gallery-item">
+ <img src="asset/diskusi.jpg"> </div>
+<div class="gallery-item">
+<img src="asset/makanan-segar.jpeg"></div>
+<div class="gallery-item">
+<img src="asset/coding.jpg"></div>
+</div>
+<div class="quote">
+<H1 class="myquote">
+    Dream as big as possible<br>then make it your reality
+</H1>
+<p>from ideas,<br> will create the purpose of something</p>
+</div>
+<div class="me">
+    <div class="myself">
+        <div class="mycontent">
+            <h2 class="about">About me</h2>
+            <h1>My Journey</h1>
+            <p>im a 20 years old boy, i study in university and try to learn many things.</p>
+            <button class="see">See More</button>
+        </div>
+        <div class="siluet">
+            <img src="asset/me.webp">
+        </div>
+    </div>
+</div>
+<h2>Hobby and Need</h2>
+<p>Anything that i like to do in my free time and i need to do</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="asset/gaming.jpg" style="width:100%">
+  <div class="text">
+    <h2>Gaming</h2>
+    <p>Gaming is one of my hobbies in my free time</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="asset/hiking.jpg" style="width:100%">
+  <div class="text">'
+    <h2>Hiking</h2>
+    <p>Hiking is a fun activity to do with a friend, also we can learn many things with hiking.</p>
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <img src="asset/makan.jpeg" style="width:100%">
+  <div class="text">
+    <h2>Eating</h2>
+    <p>Eating is main need for a mankind</p>
+  </div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="myexp">
+<h2 class="Experience">
+    My Experience
+</h2>
+<h1>
+    Showcasing My Vision:
+</h1>
+<a href="#" class="see-more-link">See More</a>
+</div>
+<div class="Skill">
+    <div class="myskill">
+    <img src="asset/marketing.jpg">
+    <div class="isi-skill">
+    <h3>Marketing</h3>
+    <p>skill untuk membuat suatu relationship dengan pelanggan</p>
+</div>
+</div>
+    <div class="myskill">
+    <img src="asset/Copywriting.png">
+    <div class="isi-skill">
+    <h3>Copywriting</h3>
+    <p>skill untuk Mempersuasi seseorang</p>
+</div>
+</div>
+    <div class="myskill">
+    <img src="asset/program.avif">
+    <div class="isi-skill">
+    <h3>Programming</h3>
+    <p>skill untuk menciptakan suatu program</p>
+</div>
+</div>
+</div>
+</div>
+<section class="proses">
+    <div class="proses-head">
+<h2>
+    Process
+</h2>
+<h1>
+    My Thoughtful Process: From Past to Future
+</h1>
+<p>
+    I will show you my process until i reach this level.
+</p>
+</div>
+<div class="isi-proses">
+    <div class="cara">
+<img src="asset/belajar.jpg">
+</div>
+<div class="cara">
+<img src="asset/komunikasi.jpg">
+</div>
+<div class="cara">
+<img src="asset/presentasi.jpg">
+</div>
+<div class="cara">
+<img src="asset/softskill.jpeg">
+</div>
+</div>
+</section>
+<section class="pendapat-sektor">
+    <div class="judulpendapat">
+<h2>
+    What my Friend say
+</h2>
+<h1>
+    Friend Stories: Bring 
+    Opinion about me
+</h1>
+</div>
+<div class="kata">
+    <div class="katateman">
+<p>janganlah kau berburuk sangka terhadap sesama karena akan memperburuk hubungan antarsesama</p>
+<span>Budi</span>
+<p>Teman sekelas</p>    
+</div>
+    <div class="katateman">
+        <p>Teruslah jalani pendidikan meskipun nilaimu jelek</p>
+<span>Adi</span>
+<p>Teman Organisasi</p>
+    </div>
+    <div class="katateman">
+        <p>Teruslah menempuh pendidikan demi keluarga</p>
+<span>Doni</span>
+<p>Teman kuliah</p>
+    </div>
+</div>
+</section>
+<section class="kerjasama">
+<h1>I hope we can work together in the future</h1>
+  <button class="komunikasi">Ingin Kerja Sama?</button>
+</section>
+  <footer>
+    <div>© Verto. All rights reserved</div>
+    <h2>Website Portofolio Saya</h2>
+   <a href="#">Privacy Policy</a> 
+</footer>
+<script src="./js/carousel.js"></script>
+<script>
+    let welcome = "Welcome to Website";
+    let nama = "Saya";
+    alert("Halo! " + welcome + " Portofolio " + nama);
+  </script>
+</body>
+</html>
